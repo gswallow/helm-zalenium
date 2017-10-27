@@ -30,12 +30,10 @@ spec:
         {{- else }}
         - name: {{ template "hub.fullname" . }}-videos
           hostPath:
-            path: {{ .Values.hub.localVolumesRoot }}/{{ template "hub.fullname" . }}-videos
-            type: DirectoryOrCreate
+            path: {{ .Values.hub.localVolumesRoot }}/{{ .Chart.Name }}-videos
         - name: {{ template "hub.fullname" . }}-shared
           hostPath:
-            path: {{ .Values.hub.localVolumesRoot }}/{{ template "hub.fullname" . }}-shared
-            type: DirectoryOrCreate
+            path: {{ .Values.hub.localVolumesRoot }}/{{ .Chart.Name }}-shared
         {{- end }}
       containers:
         - name: {{ .Chart.Name }}

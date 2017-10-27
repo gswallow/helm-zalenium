@@ -35,7 +35,7 @@ hub:
   # jmxPort: 4000
 
   ## Use persistent storage or local?
-  persistentVolumesEnabled: true
+  persistentVolumesEnabled: false
   localVolumesRoot: '/tmp'
 
   ## Configure resource requests and limits
