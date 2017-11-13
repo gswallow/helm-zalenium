@@ -1,5 +1,9 @@
 # Zalenium
 
+# DEPRECATED
+
+The [Zalenium](https://github.com/zalando/zalenium) folks caught interest in this project and we have merged it into their [docs](https://github.com/zalando/zalenium/blob/master/docs/k8s/kubernetes.md).
+
 ## TL;DR;
 
 ```console
@@ -8,7 +12,7 @@ $ helm install local/zalenium
 
 ## Introduction
 
-This chart bootstraps a [Zalenium](https://github.com/zalando/zalenium) deployment on a [Kubernetes](http://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
+This chart bootstraps a Zalenium deployment on a [Kubernetes](http://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
 
 ## Prerequisites
 
